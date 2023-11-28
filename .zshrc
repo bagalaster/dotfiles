@@ -107,8 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pyvenv="python3 -m venv .env && source .env/bin/activate"
-alias ls="exa --long --header --git"
-alias xclip="xclip -selection clipboard"
+# alias ls="exa --long --header --git"
+# alias xclip="xclip -selection clipboard"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -133,6 +133,6 @@ alias xclip="xclip -selection clipboard"
 # <<< conda initialize <<<
 
 
-export PATH=/home/bagalaster/bin:/home/bagalaster/nvim-linux64/bin:/usr/local/go/bin:/home/bagalaster/go/bin:$PATH
+# export PATH=/home/bagalaster/bin:/home/bagalaster/nvim-linux64/bin:/usr/local/go/bin:/home/bagalaster/go/bin:$PATH
 
-neofetch
+# neofetch
