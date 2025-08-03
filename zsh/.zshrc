@@ -1,21 +1,14 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,47 +85,38 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pyvenv="python3 -m venv .env && source .env/bin/activate"
-# alias ls="exa --long --header --git"
-# alias xclip="xclip -selection clipboard"
+alias ga="git add"
+alias gs="git status"
+alias gcm="git commit -m"
+alias gp="git push"
+alias gf="git fetch && git pull"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# disables prompt mangling in virtual_env/bin/activate
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/bagalaster/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/home/bagalaster/mambaforge/etc/profile.d/conda.sh" ]; then
-#         . "/home/bagalaster/mambaforge/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/bagalaster/mambaforge/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-#
-# if [ -f "/home/bagalaster/mambaforge/etc/profile.d/mamba.sh" ]; then
-#     . "/home/bagalaster/mambaforge/etc/profile.d/mamba.sh"
-# fi
-# <<< conda initialize <<<
+#Disable conda prompt changes
+#https://conda.io/docs/user-guide/configuration/use-condarc.html#change-command-prompt-changeps1
+#changeps1: False
+#`conda config --set changeps1 false`
 
+# Created by `pipx` on 2024-09-29 01:45:21
+export PATH="$PATH:/Users/macbagwell/.local/bin"
+# eval "$(pyenv virtualenv-init -)"
 
-# export PATH=/home/bagalaster/bin:/home/bagalaster/nvim-linux64/bin:/usr/local/go/bin:/home/bagalaster/go/bin:$PATH
-
-# neofetch
