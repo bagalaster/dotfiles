@@ -1,7 +1,5 @@
 # nvim-config
 
-## Getting started
-
 This is my neovim config!
 
 ## Directory Structure
