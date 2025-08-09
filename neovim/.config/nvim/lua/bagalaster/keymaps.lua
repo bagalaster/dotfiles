@@ -51,14 +51,17 @@ vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>')
 -- Floating Terminal
 vim.keymap.set('n', '<leader>tt', '<cmd>FloatTerm<CR>')
 
+-- Floating TODO
+vim.keymap.set('n', '<leader>to', '<cmd>Todo<CR>')
+
 -- Use esc to exit terminal mode like a normal person
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
 -- autocommands
 local augroup = vim.api.nvim_create_augroup
-local bagalaster_group = augroup('bagalaster', {})
-
 local autocmd = vim.api.nvim_create_autocmd
+
+local bagalaster_group = augroup('bagalaster', {})
 local yank_group = augroup('HighlightYank', {})
 
 autocmd('TextYankPost', {
@@ -89,3 +92,4 @@ autocmd('LspAttach', {
 	vim.lsp.set_log_level('debug')
     end
 })
+
