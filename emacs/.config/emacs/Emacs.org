@@ -393,7 +393,7 @@ Bubble recently used items to the top in ivy
 
     (use-package projectile
   	:init
-  	(setq projectile-project-search-path '("/Users/macbagwell/git"))
+  	(setq projectile-project-search-path '("~/git"))
   	(projectile-mode +1)
   	(projectile-discover-projects-in-search-path)
   	:bind (:map projectile-mode-map
