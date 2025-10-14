@@ -107,6 +107,7 @@ alias gs="git status"
 alias gcm="git commit -m"
 alias gp="git push"
 alias gf="git fetch && git pull"
+alias emacs="$HOME/.config/emacs/emacs.sh"
 
 # disables prompt mangling in virtual_env/bin/activate
 export VIRTUAL_ENV_DISABLE_PROMPT=1
