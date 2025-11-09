@@ -8,11 +8,13 @@ This repo contains my dotfiles and configurations for my local workstation tools
 
 Additionally, it contains my personal git configuration.
 
+This line is a new line. I'm testing Octo on this branch.
+
 ## Quickstart instructions
 
 ### 1. Install just
 
-On macOS, use brew. On Linux, use the standard package manager
+On macOS, use brew.
 
 ```bash
 brew install just
