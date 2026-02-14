@@ -3,8 +3,9 @@
 This repo contains my dotfiles and configurations for my local workstation tools:
 
 * neovim
-* zsh
-* oh-my-zsh
+* zsh (I use zinit)
+* starship
+* tmux
 
 Additionally, it contains my personal git configuration.
 
@@ -34,5 +35,8 @@ folder to sync. e.g. to sync `git`, do
 ```bash
 just stow git
 ```
+
+*Note*: My tmux config uses [`tpm`](https://github.com/tmux-plugins/tpm) to manage plugins. For the configuration to work properly, you will need to enter
+tmux and invoke the installation command (`<C-Space> + I`).
 
 That's it!

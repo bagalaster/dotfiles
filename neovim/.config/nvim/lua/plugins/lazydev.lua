@@ -1,5 +1,4 @@
 -- better experience deving on neovim configs
---
 return {
     "folke/lazydev.nvim",
     ft = "lua",
