@@ -1,6 +1,32 @@
 # nvim-config
 
-This is my neovim config!
+## Getting started
+
+This is my Neovim configuration.
+
+To get started with this config on a new machine:
+
+1. Make sure you have Neovim installed. I use brew on macOS, so I would do this:
+```bash
+brew install neovim
+```
+
+2. Make sure you have ripgrep installed. This is required for `telescope` grep functionality:
+```bash
+brew install ripgrep
+```
+
+3. Clone the repository into your config folder:
+```bash
+git clone https://github.com/bagalaster/nvim-config.git ${XDG_CONFIG_HOME:-${HOME}/.config/nvim}
+```
+
+4. Launch Neovim:
+```bash
+nvim .
+```
+
+5. Profit!
 
 ## Directory Structure
 

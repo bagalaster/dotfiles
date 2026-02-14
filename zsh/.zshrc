@@ -57,8 +57,6 @@ eval "$(zoxide init zsh)"
 # fzf
 eval "$(fzf --zsh)"
 
-export JAVA_HOME="$(/usr/libexec/java_home)"
-
 # Aliases
 alias vim=nvim
 alias cd=z
