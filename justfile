@@ -3,7 +3,7 @@
 # Defines the recipe for bootstrapping a new workstation
 
 # Brew will install these packages
-BREW_DEPS := 'stow neovim ripgrep'
+BREW_DEPS := 'stow neovim ripgrep tmux starship'
 
 # These modules from the repo will be stowed by default
 MODULES := 'zsh oh-my-zsh neovim'
